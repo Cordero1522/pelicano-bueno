@@ -1,0 +1,24 @@
+---
+const categorias = [
+  { href: '/', label: 'INICIO', active: true },
+  { href: '#', label: 'SANTA SEDE' },
+  { href: '#', label: 'FORMACIÓN' },
+  { href: '#', label: 'LITURGIA' },
+  { href: '#', label: 'BIBLIA' },
+  { href: '#', label: 'TEOLOGIA' },
+  { href: '#', label: 'SANTOS' },
+  { href: '#', label: 'REFLEXIONES' },
+];
+---
+<nav class="nav-cats" id="nav-cats">
+    <div class="container">
+        <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+            <i class="bi bi-list"></i> <span>CATEGORÍAS</span>
+        </button>
+        <ul>
+            {categorias.map((cat) => (
+                <li><a href={cat.href} class={cat.active ? 'active' : ''}>{cat.label}</a></li>
+            ))}
+        </ul>
+    </div>
+</nav>

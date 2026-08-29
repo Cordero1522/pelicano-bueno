@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, z, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const notas = defineCollection({
@@ -7,10 +7,25 @@ const notas = defineCollection({
     title: z.string(),
     category: z.string(),
     date: z.date(),
-    author: z.string(),
+    author: reference('autores'), // ← antes era z.string()
     image: z.string().optional(),
     excerpt: z.string(),
   }),
 });
 
-export const collections = { notas };
+const autores = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/autores' }),
+  schema: z.object({
+    name: z.string(),
+    role: z.string(),
+    bio: z.string(),
+    avatar: z.string(),
+    socials: z.object({
+      twitter: z.string().optional(),
+      instagram: z.string().optional(),
+      facebook: z.string().optional(),
+    }).optional(),
+  }),
+});
+
+export const collections = { notas, autores };

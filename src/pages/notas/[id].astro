@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteNav from '../../components/SiteNav.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { formatDate } from '../../lib/formatDate';
+
+export async function getStaticPaths() {
+  const notas = await getCollection('notas');
+  return notas.map((nota) => ({
+    params: { id: nota.id },
+    props: { nota },
+  }));
+}
+
+const { nota } = Astro.props;
+const { Content } = await render(nota);
+const autor = await getEntry(nota.data.author);
+---
+<BaseLayout title={`${nota.data.title} · Pelícano Bueno`}>
+    <SiteHeader />
+    <SiteNav />
+
+    <main class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <article class="card-article" style="border-bottom: none; padding-bottom: 0;">
+                    <span class="badge-cat">{nota.data.category}</span>
+                    <h1 class="card-title" style="font-size: 2.4rem; margin-top: 0.8rem; margin-bottom: 0.3rem;">
+                        {nota.data.title}
+                    </h1>
+                    <p class="card-text">{nota.data.excerpt}</p>
+                    <p class="card-subtitle" style="margin-top: 0.8rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.8rem;">
+                        <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
+                    </p>
+
+                    {nota.data.image && (
+                        <img src={nota.data.image} alt={nota.data.title} class="card-img article-hero-img" />
+                    )}
+
+                    <div class="article-body">
+                        <Content />
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="widget-autor">
+                    <img src={autor.data.avatar} alt={autor.data.name} class="avatar-autor" />
+                    <h4>{autor.data.name}</h4>
+                    <div class="cargo-autor">{autor.data.role}</div>
+                    <div class="bio-autor">{autor.data.bio}</div>
+                    {autor.data.socials && (
+                        <div class="redes-autor">
+                            {autor.data.socials.twitter && <a href={autor.data.socials.twitter} target="_blank"><i class="bi bi-twitter-x"></i></a>}
+                            {autor.data.socials.instagram && <a href={autor.data.socials.instagram} target="_blank"><i class="bi bi-instagram"></i></a>}
+                            {autor.data.socials.facebook && <a href={autor.data.socials.facebook} target="_blank"><i class="bi bi-facebook"></i></a>}
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <SiteFooter />
+
+    <script>
+        import '../../scripts/date.ts';
+        import '../../scripts/nav.ts';
+    </script>
+</BaseLayout>

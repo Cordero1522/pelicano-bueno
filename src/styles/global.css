@@ -159,6 +159,44 @@ img {
 }
 
 /* ============================================
+   NAV MÓVIL · MENÚ COLAPSABLE
+   ============================================ */
+.nav-toggle {
+    display: none;
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-cats ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-cats.open ul {
+        display: flex;
+    }
+
+    .nav-cats ul li a {
+        border-bottom: 1px solid var(--color-border);
+        padding: 10px 4px;
+    }
+}
+
+/* ============================================
    ARTÍCULOS · TARJETAS
    ============================================ */
 .card-article {
@@ -283,6 +321,208 @@ img {
 .sidebar-note-btn {
     font-size: 0.7rem;
     padding: 2px 14px;
+}
+
+/* ============================================
+   ARTÍCULO · WIDGET AUTOR, CITAS, IMÁGENES
+   ============================================ */
+.enlace {
+    color: #0077ff;
+}
+
+.article-hero-img {
+    height: 450px;
+}
+
+.article-body {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.article-body h3 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    margin-top: 1.8rem;
+    margin-bottom: 0.6rem;
+    font-size: 1.4rem;
+}
+
+.article-body p {
+    margin-bottom: 1rem;
+}
+
+.article-body ul {
+    margin-bottom: 1.2rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.cita-destacada {
+    border-left: 4px solid #000;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    background: #f8f8f8;
+    font-family: var(--font-serif);
+    font-style: italic;
+}
+
+.cita-destacada p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.cita-destacada .autor-cita {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-gray-dark);
+}
+
+.frase-lateral {
+    border-right: 4px solid #000;
+    padding-right: 1.5rem;
+    text-align: right;
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #444;
+    margin: 1.5rem 0;
+}
+
+.img-articulo {
+    margin: 1.8rem 0;
+}
+
+.img-articulo img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+.img-articulo .pie-foto {
+    font-size: 0.75rem;
+    color: #777;
+    margin-top: 0.3rem;
+    text-align: right;
+}
+
+.img-flotante {
+    float: left;
+    margin: 0.5rem 1.5rem 0.5rem 0;
+    max-width: 300px;
+}
+
+.img-flotante img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #eee;
+}
+
+.widget-autor {
+    background: #fafafa;
+    border: 1px solid var(--color-border);
+    padding: 1.8rem 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.widget-autor .avatar-autor {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1rem;
+    border: 3px solid #000;
+}
+
+.widget-autor h4 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.3rem;
+}
+
+.widget-autor .cargo-autor {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+.widget-autor .bio-autor {
+    font-size: 0.9rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: var(--color-gray-dark);
+}
+
+.widget-autor .redes-autor {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.widget-autor .redes-autor a {
+    color: #222;
+}
+
+.widget-autor .redes-autor a:hover {
+    color: #888;
+}
+
+.widget {
+    border: 1px solid var(--color-border);
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.8rem;
+    background: #fafafa;
+}
+
+.widget h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.tag {
+    display: inline-block;
+    background: #ddd;
+    padding: 2px 12px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222;
+    margin: 2px 4px 2px 0;
+}
+
+@media (max-width: 768px) {
+    .article-hero-img {
+        height: 280px;
+    }
+
+    .img-flotante {
+        float: none;
+        margin: 1rem 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .article-hero-img {
+        height: 200px;
+    }
+
+    .widget-autor .avatar-autor {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 /* ============================================
