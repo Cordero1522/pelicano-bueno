@@ -1,14 +1,7 @@
 ---
-const categorias = [
-  { href: '/', label: 'INICIO', active: true },
-  { href: '#', label: 'SANTA SEDE' },
-  { href: '#', label: 'FORMACIÓN' },
-  { href: '#', label: 'LITURGIA' },
-  { href: '#', label: 'BIBLIA' },
-  { href: '#', label: 'TEOLOGIA' },
-  { href: '#', label: 'SANTOS' },
-  { href: '#', label: 'REFLEXIONES' },
-];
+import { CATEGORY_LABELS, getSlug } from '../lib/categories';
+
+const currentPath = Astro.url.pathname;
 ---
 <nav class="nav-cats" id="nav-cats">
     <div class="container">
@@ -16,9 +9,13 @@ const categorias = [
             <i class="bi bi-list"></i> <span>CATEGORÍAS</span>
         </button>
         <ul>
-            {categorias.map((cat) => (
-                <li><a href={cat.href} class={cat.active ? 'active' : ''}>{cat.label}</a></li>
-            ))}
+            <li><a href="/" class={currentPath === '/' ? 'active' : ''}>INICIO</a></li>
+            {CATEGORY_LABELS.map((label) => {
+                const href = `/categorias/${getSlug(label)}/`;
+                return (
+                    <li><a href={href} class={currentPath === href ? 'active' : ''}>{label}</a></li>
+                );
+            })}
         </ul>
     </div>
 </nav>

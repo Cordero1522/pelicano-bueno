@@ -1,13 +1,14 @@
 import { defineCollection, z, reference } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { CATEGORY_LABELS } from './lib/categories';
 
 const notas = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/notas' }),
   schema: z.object({
     title: z.string(),
-    category: z.string(),
+    category: z.enum(CATEGORY_LABELS),
     date: z.date(),
-    author: reference('autores'), // ← antes era z.string()
+    author: reference('autores'),
     image: z.string().optional(),
     excerpt: z.string(),
   }),

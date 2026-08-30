@@ -12,8 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-remark": "^7.2.4",
     "astro": "^7.2.9",
-    "bootstrap-icons": "^1.13.1"
+    "bootstrap-icons": "^1.13.1",
+    "rehype-external-links": "^3.0.0"
   },
   "allowScripts": {
     "esbuild": true

@@ -352,6 +352,14 @@ img {
     margin-bottom: 1rem;
 }
 
+.article-body a {
+    color: #0077ff;
+}
+
+.article-body a:hover {
+    color: #0055cc;
+}
+
 .article-body ul {
     margin-bottom: 1.2rem;
     list-style-type: disc;
@@ -418,6 +426,41 @@ img {
     width: 100%;
     height: auto;
     border: 1px solid #eee;
+}
+
+/* Variantes de cita destacada */
+.cita-destacada--gris {
+    background: #f0f0f0;
+}
+
+.cita-destacada--sutil {
+    border-left-color: #666;
+}
+
+/* Imagen flotante a la derecha */
+.img-flotante--derecha {
+    float: right;
+    margin: 0.5rem 0 0.5rem 1.5rem;
+}
+
+/* Blockquote nativo de Markdown (sintaxis >) */
+.article-body blockquote {
+    border-left: 4px solid #000;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: #222;
+    font-style: italic;
+}
+
+.article-body blockquote p:first-child {
+    font-size: 1.1rem;
+}
+
+.article-body blockquote p:last-child {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.4rem;
 }
 
 .widget-autor {
@@ -568,6 +611,23 @@ img {
 
 .footer .social-icons a:hover {
     color: #fff;
+}
+
+/* ============================================
+   PAGINACIÓN
+   ============================================ */
+.pagination-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.pagination-info {
+    font-size: 0.85rem;
+    color: #666;
 }
 
 /* ============================================

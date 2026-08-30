@@ -1,34 +1,42 @@
 ---
-import { formatDate } from '../lib/formatDate';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SiteHeader from '../components/SiteHeader.astro';
 import SiteNav from '../components/SiteNav.astro';
 import SiteFooter from '../components/SiteFooter.astro';
+import NoteCard from '../components/NoteCard.astro';
 import { getCollection, getEntry } from 'astro:content';
+import { formatDate } from '../lib/formatDate';
+import { getSlug } from '../lib/categories';
 
 const notas = await getCollection('notas');
 const notasOrdenadas = notas.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
 const notaPrincipal = notasOrdenadas[0];
 const notasSidebar = notasOrdenadas.slice(1, 3);
+const notasAdicionales = notasOrdenadas.slice(3, 13); // hasta 10 notas más → total 13 en el Home
 
 const autorPrincipal = await getEntry(notaPrincipal.data.author);
+
 const notasSidebarConAutor = await Promise.all(
-  notasSidebar.map(async (nota) => ({
-    nota,
-    autor: await getEntry(nota.data.author),
-  }))
+  notasSidebar.map(async (nota) => ({ nota, autor: await getEntry(nota.data.author) }))
+);
+
+const notasAdicionalesConAutor = await Promise.all(
+  notasAdicionales.map(async (nota) => ({ nota, autor: await getEntry(nota.data.author) }))
 );
 ---
+
 <BaseLayout title="Pelícano Bueno · Evangelización Digital">
     <SiteHeader />
     <SiteNav />
 
     <main class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+
         <div class="row g-4">
-                        <div class="col-lg-8">
+            <div class="col-lg-8">
                 <article class="card-article">
                     <img src={notaPrincipal.data.image} alt={notaPrincipal.data.title} class="card-img" />
-                    <span class="badge-cat">{notaPrincipal.data.category}</span>
+                    <a href={`/categorias/${getSlug(notaPrincipal.data.category)}/`} class="badge-cat">{notaPrincipal.data.category}</a>
                     <h1 class="card-title" style="font-size: 2rem;">{notaPrincipal.data.title}</h1>
                     <p class="card-subtitle">
                         <i class="bi bi-calendar-fill"></i> {formatDate(notaPrincipal.data.date)} · <strong>{autorPrincipal.data.name}</strong>
@@ -42,23 +50,25 @@ const notasSidebarConAutor = await Promise.all(
                 </article>
             </div>
 
-                        <div class="col-lg-4">
+            <div class="col-lg-4">
                 <div class="sidebar-notes">
                     {notasSidebarConAutor.map(({ nota, autor }) => (
-    <article class="card-article sidebar-note">
-        <img src={nota.data.image} alt={nota.data.title} class="card-img sidebar-note-img" />
-        <span class="badge-cat">{nota.data.category}</span>
-        <h4 class="card-title sidebar-note-title">{nota.data.title}</h4>
-        <p class="card-subtitle">
-            <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
-        </p>
-        <p class="card-text sidebar-note-text">{nota.data.excerpt}</p>
-        <a href={`/notas/${nota.id}/`} class="btn-outline-dark-custom sidebar-note-btn">Leer más <i class="bi bi-caret-right-fill"></i></a>
-    </article>
-))}
+                        <NoteCard nota={nota} autor={autor} compact />
+                    ))}
                 </div>
             </div>
         </div>
+
+        {notasAdicionalesConAutor.length > 0 && (
+            <div class="row g-4" style="margin-top: 0.5rem;">
+                {notasAdicionalesConAutor.map(({ nota, autor }) => (
+                    <div class="col-md-6">
+                        <NoteCard nota={nota} autor={autor} />
+                    </div>
+                ))}
+            </div>
+        )}
+
     </main>
 
     <SiteFooter />

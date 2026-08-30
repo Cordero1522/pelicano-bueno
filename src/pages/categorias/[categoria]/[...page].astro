@@ -1,0 +1,73 @@
+---
+import type { GetStaticPathsOptions } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SiteHeader from '../../../components/SiteHeader.astro';
+import SiteNav from '../../../components/SiteNav.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { formatDate } from '../../../lib/formatDate';
+import { CATEGORY_LABELS, getSlug, getLabelBySlug } from '../../../lib/categories';
+import NoteCard from '../../../components/NoteCard.astro';
+
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
+  const notas = await getCollection('notas');
+
+  return CATEGORY_LABELS.flatMap((label) => {
+    const notasDeCategoria = notas
+      .filter((nota) => nota.data.category === label)
+      .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+    return paginate(notasDeCategoria, {
+      params: { categoria: getSlug(label) },
+      pageSize: 6,
+    });
+  });
+}
+
+const { page } = Astro.props;
+const categoriaLabel = getLabelBySlug(Astro.params.categoria as string);
+
+const notasConAutor = await Promise.all(
+  page.data.map(async (nota) => ({
+    nota,
+    autor: await getEntry(nota.data.author),
+  }))
+);
+---
+<BaseLayout title={`${categoriaLabel} · Pelícano Bueno`}>
+    <SiteHeader />
+    <SiteNav />
+
+    <main class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <h2 style="border-bottom: 3px solid #000; padding-bottom: 0.6rem; margin-bottom: 1.5rem;">
+            {categoriaLabel}
+        </h2>
+
+        <div class="row g-4">
+    {notasConAutor.map(({ nota, autor }) => (
+        <div class="col-md-6">
+            <NoteCard nota={nota} autor={autor} />
+        </div>
+    ))}
+</div>
+
+        {notasConAutor.length === 0 && (
+            <p>Aún no hay notas publicadas en esta categoría.</p>
+        )}
+
+        {page.lastPage > 1 && (
+            <nav class="pagination-nav" aria-label="Paginación">
+                {page.url.prev ? <a href={page.url.prev} class="btn-outline-dark-custom">← Anteriores</a> : <span />}
+                <span class="pagination-info">Página {page.currentPage} de {page.lastPage}</span>
+                {page.url.next ? <a href={page.url.next} class="btn-outline-dark-custom">Siguientes →</a> : <span />}
+            </nav>
+        )}
+    </main>
+
+    <SiteFooter />
+
+    <script>
+        import '../../../scripts/date.ts';
+        import '../../../scripts/nav.ts';
+    </script>
+</BaseLayout>

@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { formatDate } from '../lib/formatDate';
+import { getSlug } from '../lib/categories';
+
+interface Props {
+  nota: CollectionEntry<'notas'>;
+  autor: CollectionEntry<'autores'>;
+  compact?: boolean;
+}
+
+const { nota, autor, compact = false } = Astro.props;
+---
+<article class={`card-article ${compact ? 'sidebar-note' : ''}`}>
+    {nota.data.image && (
+        <img
+            src={nota.data.image}
+            alt={nota.data.title}
+            class={`card-img ${compact ? 'sidebar-note-img' : ''}`}
+        />
+    )}
+    <a href={`/categorias/${getSlug(nota.data.category)}/`} class="badge-cat">{nota.data.category}</a>
+    <h4 class={`card-title ${compact ? 'sidebar-note-title' : ''}`}>{nota.data.title}</h4>
+    <p class="card-subtitle">
+        <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
+    </p>
+    <p class={`card-text ${compact ? 'sidebar-note-text' : ''}`}>{nota.data.excerpt}</p>
+    <a href={`/notas/${nota.id}/`} class={`btn-outline-dark-custom ${compact ? 'sidebar-note-btn' : ''}`}>
+        Leer más <i class="bi bi-caret-right-fill"></i>
+    </a>
+</article>
