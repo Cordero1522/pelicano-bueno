@@ -46,6 +46,23 @@ const relacionadasConAutor = await Promise.all(
     autor: await getEntry(n.data.author),
   }))
 );
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: nota.data.title,
+  description: nota.data.excerpt,
+  image: new URL(nota.data.image ?? '/logo.webp', import.meta.env.PUBLIC_SITE_URL).toString(),
+  datePublished: nota.data.date.toISOString(),
+  author: {
+    '@type': 'Person',
+    name: autor.data.name,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Pelícano Bueno',
+  },
+};
 ---
 
 <!-- ========================================== -->
@@ -56,6 +73,7 @@ const relacionadasConAutor = await Promise.all(
     description={nota.data.excerpt}
     image={nota.data.image}
     type="article"
+    extraSchema={articleSchema}
 >
   <SiteHeader />
   <SiteNav />

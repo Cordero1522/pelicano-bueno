@@ -9,6 +9,7 @@ interface Props {
   canonicalPath?: string;
   type?: 'website' | 'article';
   robots?: string;
+  extraSchema?: Record<string, unknown>;
 }
 
 const {
@@ -18,12 +19,21 @@ const {
   canonicalPath = Astro.url.pathname,
   type = 'website',
   robots = 'index, follow',
+  extraSchema,
 } = Astro.props;
 
 const siteUrl = import.meta.env.PUBLIC_SITE_URL;
 const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
 const imageUrl = new URL(image, siteUrl).toString();
 const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Pelícano Bueno',
+  url: siteUrl,
+  description: 'Blog católico de evangelización digital.',
+};
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -55,6 +65,12 @@ const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={imageUrl} />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    {extraSchema && (
+        <script type="application/ld+json" set:html={JSON.stringify(extraSchema)} />
+    )}
 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/webp" href="/logo.webp" />
