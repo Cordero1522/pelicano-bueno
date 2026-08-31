@@ -18,6 +18,8 @@ Esta antigua imagen se convirtió en un hermoso símbolo del sacrificio y la ent
 
 De ahí nace el nombre de este proyecto: **Pelícano Bueno**, como una referencia a Cristo, que se entrega por amor a nosotros. ❤️
 
+![Pelícano Bueno](./public/images/pelicano-bueno-md.png)
+
 ## 🙏 Agradecimientos
 
 Primeramente, agradezco a **Dios**, uno y trino, pues de él procede todo bien, todo conocimiento y todos los dones que ha puesto en cada uno de nosotros. A él agradezco el conocimiento, las capacidades y las oportunidades que me han permitido llevar a buen término este proyecto. 🕯️🤍
