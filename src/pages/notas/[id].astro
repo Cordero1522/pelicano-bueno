@@ -1,12 +1,20 @@
 ---
+// ============================================
+// 1. IMPORTS
+// ============================================
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import SiteNav from '../../components/SiteNav.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
+import NoteCard from '../../components/NoteCard.astro';
+
 import { getCollection, getEntry, render } from 'astro:content';
 import { formatDate } from '../../lib/formatDate';
 import { getSlug } from '../../lib/categories';
 
+// ============================================
+// 2. STATIC PATHS
+// ============================================
 export async function getStaticPaths() {
   const notas = await getCollection('notas');
   return notas.map((nota) => ({
@@ -15,59 +23,119 @@ export async function getStaticPaths() {
   }));
 }
 
+// ============================================
+// 3. PROPS Y DATOS PRINCIPALES
+// ============================================
 const { nota } = Astro.props;
 const { Content } = await render(nota);
 const autor = await getEntry(nota.data.author);
+
+// ============================================
+// 4. NOTAS RELACIONADAS
+// ============================================
+const todasLasNotas = await getCollection('notas');
+
+const relacionadas = todasLasNotas
+  .filter((n) => n.data.category === nota.data.category && n.id !== nota.id)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+  .slice(0, 3);
+
+const relacionadasConAutor = await Promise.all(
+  relacionadas.map(async (n) => ({
+    nota: n,
+    autor: await getEntry(n.data.author),
+  }))
+);
 ---
+
+<!-- ========================================== -->
+<!-- 5. TEMPLATE HTML                           -->
+<!-- ========================================== -->
 <BaseLayout title={`${nota.data.title} · Pelícano Bueno`}>
-    <SiteHeader />
-    <SiteNav />
+  <SiteHeader />
+  <SiteNav />
 
-    <main class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
-        <div class="row g-4">
-            <div class="col-lg-8">
-                <article class="card-article" style="border-bottom: none; padding-bottom: 0;">
-                    <a href={`/categorias/${getSlug(nota.data.category)}/`} class="badge-cat">{nota.data.category}</a>
-                    <h1 class="card-title" style="font-size: 2.4rem; margin-top: 0.8rem; margin-bottom: 0.3rem;">
-                        {nota.data.title}
-                    </h1>
-                    <p class="card-text">{nota.data.excerpt}</p>
-                    <p class="card-subtitle" style="margin-top: 0.8rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.8rem;">
-                        <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
-                    </p>
+  <main class="container" style="padding-top: 2rem; padding-bottom: 2rem;">
+    <!-- Artículo principal + Sidebar -->
+    <div class="row g-4">
+      <!-- Columna principal -->
+      <div class="col-lg-8">
+        <article class="card-article" style="border-bottom: none; padding-bottom: 0;">
+          <a href={`/categorias/${getSlug(nota.data.category)}/`} class="badge-cat">
+            {nota.data.category}
+          </a>
 
-                    {nota.data.image && (
-                        <img src={nota.data.image} alt={nota.data.title} class="card-img article-hero-img" />
-                    )}
+          <h1 class="card-title" style="font-size: 2.4rem; margin-top: 0.8rem; margin-bottom: 0.3rem;">
+            {nota.data.title}
+          </h1>
 
-                    <div class="article-body">
-                        <Content />
-                    </div>
-                </article>
+          <p class="card-text">{nota.data.excerpt}</p>
+
+          <p class="card-subtitle" style="margin-top: 0.8rem; border-bottom: 1px solid var(--color-border); padding-bottom: 0.8rem;">
+            <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
+          </p>
+
+          {nota.data.image && (
+            <img src={nota.data.image} alt={nota.data.title} class="card-img article-hero-img" />
+          )}
+
+          <div class="article-body">
+            <Content />
+          </div>
+        </article>
+      </div>
+
+      <!-- Sidebar del autor -->
+      <div class="col-lg-4">
+        <div class="widget-autor">
+          <img src={autor.data.avatar} alt={autor.data.name} class="avatar-autor" />
+          <h4>{autor.data.name}</h4>
+          <div class="cargo-autor">{autor.data.role}</div>
+          <div class="bio-autor">{autor.data.bio}</div>
+
+          {autor.data.socials && (
+            <div class="redes-autor">
+              {autor.data.socials.twitter && (
+                <a href={autor.data.socials.twitter} target="_blank">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              )}
+              {autor.data.socials.instagram && (
+                <a href={autor.data.socials.instagram} target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              )}
+              {autor.data.socials.facebook && (
+                <a href={autor.data.socials.facebook} target="_blank">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              )}
             </div>
-
-            <div class="col-lg-4">
-                <div class="widget-autor">
-                    <img src={autor.data.avatar} alt={autor.data.name} class="avatar-autor" />
-                    <h4>{autor.data.name}</h4>
-                    <div class="cargo-autor">{autor.data.role}</div>
-                    <div class="bio-autor">{autor.data.bio}</div>
-                    {autor.data.socials && (
-                        <div class="redes-autor">
-                            {autor.data.socials.twitter && <a href={autor.data.socials.twitter} target="_blank"><i class="bi bi-twitter-x"></i></a>}
-                            {autor.data.socials.instagram && <a href={autor.data.socials.instagram} target="_blank"><i class="bi bi-instagram"></i></a>}
-                            {autor.data.socials.facebook && <a href={autor.data.socials.facebook} target="_blank"><i class="bi bi-facebook"></i></a>}
-                        </div>
-                    )}
-                </div>
-            </div>
+          )}
         </div>
-    </main>
+      </div>
+    </div>
 
-    <SiteFooter />
+    <!-- Notas relacionadas -->
+    {relacionadasConAutor.length > 0 && (
+      <div class="related-notes">
+        <h3 class="related-notes-title">NOTAS RELACIONADAS</h3>
+        <br />
+        <div class="row g-4">
+          {relacionadasConAutor.map(({ nota: n, autor: a }) => (
+            <div class="col-md-4">
+              <NoteCard nota={n} autor={a} />
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </main>
 
-    <script>
-        import '../../scripts/date.ts';
-        import '../../scripts/nav.ts';
-    </script>
+  <SiteFooter />
+
+  <script>
+    import '../../scripts/date.ts';
+    import '../../scripts/nav.ts';
+  </script>
 </BaseLayout>

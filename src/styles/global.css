@@ -614,6 +614,22 @@ img {
 }
 
 /* ============================================
+   NOTICIAS RELACIONADAS
+   ============================================ */
+.related-notes {
+    margin-top: 3rem;
+    border-top: 2px solid #000;
+    padding-top: 2rem;
+}
+
+.related-notes-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ============================================
    PAGINACIÓN
    ============================================ */
 .pagination-nav {
