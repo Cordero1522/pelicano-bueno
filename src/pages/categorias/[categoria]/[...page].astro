@@ -34,7 +34,10 @@ const notasConAutor = await Promise.all(
   }))
 );
 ---
-<BaseLayout title={`${categoriaLabel} · Pelícano Bueno`}>
+<BaseLayout
+    title={`${categoriaLabel} · Pelícano Bueno`}
+    description={`Notas de la categoría ${categoriaLabel} en Pelícano Bueno.`}
+>
     <SiteHeader />
     <SiteNav />
 

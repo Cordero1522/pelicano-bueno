@@ -51,7 +51,12 @@ const relacionadasConAutor = await Promise.all(
 <!-- ========================================== -->
 <!-- 5. TEMPLATE HTML                           -->
 <!-- ========================================== -->
-<BaseLayout title={`${nota.data.title} · Pelícano Bueno`}>
+<BaseLayout
+    title={`${nota.data.title} · Pelícano Bueno`}
+    description={nota.data.excerpt}
+    image={nota.data.image}
+    type="article"
+>
   <SiteHeader />
   <SiteNav />
 

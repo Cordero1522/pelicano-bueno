@@ -1,21 +1,63 @@
 ---
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import '../styles/global.css';
 
 interface Props {
   title: string;
+  description: string;
+  image?: string;
+  canonicalPath?: string;
+  type?: 'website' | 'article';
+  robots?: string;
 }
-const { title } = Astro.props;
+
+const {
+  title,
+  description,
+  image = '/logo.webp',
+  canonicalPath = Astro.url.pathname,
+  type = 'website',
+  robots = 'index, follow',
+} = Astro.props;
+
+const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
+const imageUrl = new URL(image, siteUrl).toString();
+const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
 ---
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/webp" href="/logo.webp" />
+
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Misael Cordero" />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonicalUrl} />
+
+    {gscVerification && (
+        <meta name="google-site-verification" content={gscVerification} />
+    )}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Pelícano Bueno" />
+    <meta property="og:locale" content="es_MX" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    <link rel="icon" type="image/webp" href="/logo.webp" />
 </head>
 <body>
     <slot />
