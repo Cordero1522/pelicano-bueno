@@ -52,7 +52,7 @@ const articleSchema = {
   '@type': 'Article',
   headline: nota.data.title,
   description: nota.data.excerpt,
-  image: new URL(nota.data.image ?? '/logo.webp', import.meta.env.PUBLIC_SITE_URL).toString(),
+  image: new URL(nota.data.image ?? '/logo.webp', import { SITE_URL, GSC_VERIFICATION } from '../lib/site';).toString(),
   datePublished: nota.data.date.toISOString(),
   author: {
     '@type': 'Person',

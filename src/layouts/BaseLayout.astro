@@ -1,4 +1,5 @@
 ---
+import { SITE_URL, GSC_VERIFICATION } from '../lib/site';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/global.css';
 
@@ -22,10 +23,10 @@ const {
   extraSchema,
 } = Astro.props;
 
-const siteUrl = import.meta.env.PUBLIC_SITE_URL;
+const siteUrl = SITE_URL;
+const gscVerification = GSC_VERIFICATION;
 const canonicalUrl = new URL(canonicalPath, siteUrl).toString();
 const imageUrl = new URL(image, siteUrl).toString();
-const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
 
 const websiteSchema = {
   '@context': 'https://schema.org',
