@@ -3,7 +3,7 @@ title: "¿A qué celebraciones debe asistir todo católico?"
 category: "FORMACIÓN"
 date: 2026-08-15
 author: misael-cordero
-image: "/images/notas/celebraciones-de-precepto/portada.webp"
+image: "/images/notas/a-que-celebraciones-debe-asistir-todo-catolico/portada.webp"
 excerpt: "Durante el año, la Iglesia nos reúne para celebrar los momentos más importantes de nuestra vida cristiana. Estas celebraciones nos invitan a fortalecer la relación con Dios y vivir la fe en comunidad. Pero, ¿Cuáles son estas celebraciones y por qué son tan importantes?"
 ---
 
@@ -35,7 +35,7 @@ Esta lista corresponde a las celebraciones de precepto para la Iglesia Universal
 En **México**, además de los domingos, algunas de estas celebraciones tienen carácter de precepto y existe también una fecha muy especial: El **12 de Diciembre, Solemnidad de Nuestra Señora de Guadalupe**.
 
 <div class="img-flotante">
-    <img src="/images/notas/celebraciones-de-precepto/virgen-de-guadalupe.webp" alt="Virgen de Guadalupe" />
+    <img src="/images/notas/a-que-celebraciones-debe-asistir-todo-catolico/virgen-de-guadalupe.webp" alt="Virgen de Guadalupe" />
 </div>
 
 Esta celebración tiene un significado especial no solo para México, sino para **todo el continente americano**. En **1999**, el Papa **San Juan Pablo II** estableció que la celebración de la **Bienaventurada Virgen María de Guadalupe** se realizara cada año en todo el continente americano con el grado de fiesta. Con esta decisión, el Papa quiso poner bajo la protección maternal de la Virgen, a la Iglesia que peregrina en América y pedir su intercesión para que la fe y la nueva evangelización dieran frutos.

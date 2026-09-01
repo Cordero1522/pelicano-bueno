@@ -1,10 +1,6 @@
 ---
 name: "Misael Cordero"
 role: "Catequista · Devoto de San José"
-bio: "Mi camino en la fe empezó participando 16 años como monaguillo y hoy continúa desde la catequesis. La experiencia de trabajar con niños y jóvenes me ha llevado a seguir preparándome, participando en espacios de formación teológica y litúrgica."
+bio: "Tengo 24 años y soy Desarrollador de Software, yo mismo desarrollé este sitio como un espacio para compartir y aprender sobre nuestra fe. En mi parroquia, dedicada a Nuestra Señora de Fátima, serví durante 16 años como monaguillo. Actualmente soy catequista y me gusta enseñar, aprender y formarme especialmente en liturgia. Todos los días busco imitar las virtudes de San José y por supuesto, también disfruto unos buenos boneless."
 avatar: "/images/autores/misael-cordero.webp"
-socials:
-  twitter: "#"
-  instagram: "#"
-  facebook: "#"
 ---
