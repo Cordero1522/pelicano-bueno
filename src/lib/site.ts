@@ -1,2 +1,2 @@
 export const SITE_URL = 'https://pelicano-bueno.vercel.app';
-export const GSC_VERIFICATION = ''; // pon aquí tu código cuando Search Console te lo entregue
+export const GSC_VERIFICATION = 'SdZZqRMtJum2HZg4S8p1mSx8Hzawitv0I-wDpzwcjh4';
