@@ -1,6 +1,6 @@
 ---
 title: "La nueva encíclica de León XIV"
-category: "FORMACIÓN"
+category: "SANTA SEDE"
 date: 2026-08-20
 author: angela-perez
 image: "#"

@@ -1,51 +1,38 @@
 ---
-// ============================================
-// 1. IMPORTS
-// ============================================
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import SiteHeader from '../../components/SiteHeader.astro';
-import SiteNav from '../../components/SiteNav.astro';
-import SiteFooter from '../../components/SiteFooter.astro';
-import NoteCard from '../../components/NoteCard.astro';
-
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SiteHeader from '../../../components/SiteHeader.astro';
+import SiteNav from '../../../components/SiteNav.astro';
+import SiteFooter from '../../../components/SiteFooter.astro';
+import NoteCard from '../../../components/NoteCard.astro';
 import { getCollection, getEntry, render } from 'astro:content';
-import { formatDate } from '../../lib/formatDate';
-import { getSlug } from '../../lib/categories';
-import { SITE_URL } from '../../lib/site';
+import { formatDate } from '../../../lib/formatDate';
+import { getSlug } from '../../../lib/categories';
+import { getNotaSlug, getNotaUrl } from '../../../lib/notes';
+import { SITE_URL } from '../../../lib/site';
 
-// ============================================
-// 2. STATIC PATHS
-// ============================================
 export async function getStaticPaths() {
   const notas = await getCollection('notas');
   return notas.map((nota) => ({
-    params: { id: nota.id },
+    params: {
+      categoria: getSlug(nota.data.category),
+      id: getNotaSlug(nota),
+    },
     props: { nota },
   }));
 }
 
-// ============================================
-// 3. PROPS Y DATOS PRINCIPALES
-// ============================================
 const { nota } = Astro.props;
 const { Content } = await render(nota);
 const autor = await getEntry(nota.data.author);
 
-// ============================================
-// 4. NOTAS RELACIONADAS
-// ============================================
 const todasLasNotas = await getCollection('notas');
-
 const relacionadas = todasLasNotas
   .filter((n) => n.data.category === nota.data.category && n.id !== nota.id)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, 3);
 
 const relacionadasConAutor = await Promise.all(
-  relacionadas.map(async (n) => ({
-    nota: n,
-    autor: await getEntry(n.data.author),
-  }))
+  relacionadas.map(async (n) => ({ nota: n, autor: await getEntry(n.data.author) }))
 );
 
 const articleSchema = {
@@ -55,25 +42,16 @@ const articleSchema = {
   description: nota.data.excerpt,
   image: new URL(nota.data.image ?? '/logo.webp', SITE_URL).toString(),
   datePublished: nota.data.date.toISOString(),
-  author: {
-    '@type': 'Person',
-    name: autor.data.name,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Pelícano Bueno',
-  },
+  author: { '@type': 'Person', name: autor.data.name },
+  publisher: { '@type': 'Organization', name: 'Pelícano Bueno' },
 };
 ---
-
-<!-- ========================================== -->
-<!-- 5. TEMPLATE HTML                           -->
-<!-- ========================================== -->
 <BaseLayout
     title={`${nota.data.title} · Pelícano Bueno`}
     description={nota.data.excerpt}
     image={nota.data.image}
     type="article"
+    canonicalPath={getNotaUrl(nota)}
     extraSchema={articleSchema}
 >
   <SiteHeader />
@@ -159,7 +137,7 @@ const articleSchema = {
   <SiteFooter />
 
   <script>
-    import '../../scripts/date.ts';
-    import '../../scripts/nav.ts';
+    import '../../../scripts/date.ts';
+    import '../../../scripts/nav.ts';
   </script>
 </BaseLayout>

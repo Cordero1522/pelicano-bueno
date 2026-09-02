@@ -7,6 +7,7 @@ import NoteCard from '../components/NoteCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { formatDate } from '../lib/formatDate';
 import { getSlug } from '../lib/categories';
+import { getNotaUrl } from '../lib/notes';
 
 const notas = await getCollection('notas');
 const notasOrdenadas = notas.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
@@ -44,7 +45,7 @@ const notasAdicionalesConAutor = await Promise.all(
                     <p class="card-text">
                         {notaPrincipal.data.excerpt}
                     </p>
-                    <a href={`/notas/${notaPrincipal.id}/`} class="btn-outline-dark-custom">
+                    <a href={getNotaUrl(notaPrincipal)} class="btn-outline-dark-custom">
                         Leer más <i class="bi bi-caret-right-fill"></i>
                     </a>
                 </article>

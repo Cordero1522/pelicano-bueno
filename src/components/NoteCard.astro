@@ -2,6 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 import { formatDate } from '../lib/formatDate';
 import { getSlug } from '../lib/categories';
+import { getNotaUrl } from '../lib/notes';
 
 interface Props {
   nota: CollectionEntry<'notas'>;
@@ -25,7 +26,7 @@ const { nota, autor, compact = false } = Astro.props;
         <i class="bi bi-calendar-fill"></i> {formatDate(nota.data.date)} · <strong>{autor.data.name}</strong>
     </p>
     <p class={`card-text ${compact ? 'sidebar-note-text' : ''}`}>{nota.data.excerpt}</p>
-    <a href={`/notas/${nota.id}/`} class={`btn-outline-dark-custom ${compact ? 'sidebar-note-btn' : ''}`}>
+    <a href={getNotaUrl(nota)} class={`btn-outline-dark-custom ${compact ? 'sidebar-note-btn' : ''}`}>
         Leer más <i class="bi bi-caret-right-fill"></i>
     </a>
 </article>
