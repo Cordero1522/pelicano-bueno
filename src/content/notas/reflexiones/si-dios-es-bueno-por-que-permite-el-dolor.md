@@ -1,10 +1,10 @@
 ---
-title: "Si Dios es bueno, ¿Por qué permite el mal?"
-category: "FORMACIÓN"
+title: "Si Dios es bueno, ¿Por qué permite el dolor?"
+category: "REFLEXIONES"
 date: 2026-09-01
 author: misael-cordero
-image: "/images/notas/formacion/si-dios-es-bueno-por-que-permite-el-mal-en-el-mundo/portada.webp"
-excerpt: "Cuando el dolor o una situación difícil llegan a nuestra vida, es normal preguntarnos dónde está Dios y por qué permite estas cosas. La fe no pretende ofrecer una respuesta sencilla, sino que nos invita a mirar a Cristo y descubrir que Dios permanece a nuestro lado incluso en el sufrimiento."
+image: "/images/notas/reflexiones/si-dios-es-bueno-por-que-permite-el-dolor/portada.webp"
+excerpt: "Cuando el dolor llega a nuestra vida, es normal preguntarnos ¿dónde está Dios? La fe nos invita a mirar a Cristo y descubrir su presencia"
 ---
 
 # Hay preguntas que aparecen especialmente cuando atravesamos momentos difíciles
@@ -19,11 +19,24 @@ La propia Iglesia reconoce que estamos ante un misterio. El **Catecismo de la Ig
 
 Por eso, cuando alguien está sufriendo, la respuesta cristiana no debería ser una frase rápida que pretenda explicarlo todo, como: **"Es parte del plan de Dios"**, **"Es porque Dios así lo quiso"**, **"Dios lo hace por algo"** o **"Así es la voluntad de Dios"**, porque en lugar de ayudar, deshumanizamos el dolor y señalamos a Dios como el responsable de nuestros sufrimientos. Hay dolores que necesitan primero ser acompañados, escuchados y llevados a la oración, como decia el **Papa León XIV** en La Vigilia de Oración, durante su viaje apostólico a España:
 
-> "No podemos hacerlo solos en las horas de dolor ..., debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe sin la prisa de explicarnos ese dolor".
+> "No podemos hacerlo solos en las horas de dolor ..., debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe con discresión, sin la prisa de explicarnos ese dolor".
 >
-> "No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas...".
+> "No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas, Dios no quiere el sufrimiento, lo lleva con nosotros".
 >
-> "Dios no quiere el sufrimiento, lo lleva con nosotros"
+>.
+
+<div class="video-embed">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TyCxgc_fbSM?si=sXXRAO54Hfes-1ob&amp;start=528"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
 
 Entonces, ¿qué podemos decir desde la fe?
 
