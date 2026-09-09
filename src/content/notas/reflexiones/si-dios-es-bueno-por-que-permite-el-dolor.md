@@ -9,21 +9,23 @@ excerpt: "Cuando el dolor llega a nuestra vida, es normal preguntarnos ¿dónde 
 
 # Hay preguntas que aparecen especialmente cuando atravesamos momentos difíciles
 
-**¿Por qué Dios permite esto? ¿Por qué, si es bueno y todopoderoso, no evita el sufrimiento?**
+¿Por qué Dios permite esto? ¿Por qué, si es bueno y todopoderoso, no evita el sufrimiento?
 
-Puede ser la pregunta de alguien que acaba de perder a un ser querido, de una persona que enfrenta una enfermedad, de quien ha sufrido una injusticia, una traición o una situación que parece no tener sentido. También puede surgir al mirar las guerras, la violencia, la pobreza y tantas tragedias que los noticieros presentan todos los días.
+Puede ser la pregunta de alguien que acaba de perder a un ser querido, de una persona que enfrenta una enfermedad, de quien ha sufrido una injusticia, una traición o alguna situación que parece no tener mayor sentido, mas que experimentar el dolor. También puede surgir al mirar las guerras, la violencia, la pobreza y tantas tragedias que los noticieros presentan todos los días.
 
 Y debemos decirlo con toda honestidad: **No es una pregunta sencilla**.
 
-La propia Iglesia reconoce que estamos ante un misterio. El **Catecismo de la Iglesia Católica**, en el numeral **309,** habla de la existencia del mal como una cuestión "tan apremiante como inevitable, tan dolorosa como misteriosa", y enseña que no existe una respuesta simple.
+La propia Iglesia reconoce que estamos ante un misterio. El [**Catecismo de la Iglesia Católica**](https://www.vatican.va/archive/catechism_sp/p1s2c1p4_sp.html), en el numeral **309,** habla de la existencia del mal como una cuestión "tan apremiante como inevitable, tan dolorosa como misteriosa", y enseña que no existe una respuesta simple.
 
-Por eso, cuando alguien está sufriendo, la respuesta cristiana no debería ser una frase rápida que pretenda explicarlo todo, como: **"Es parte del plan de Dios"**, **"Es porque Dios así lo quiso"**, **"Dios lo hace por algo"** o **"Así es la voluntad de Dios"**, porque en lugar de ayudar, deshumanizamos el dolor y señalamos a Dios como el responsable de nuestros sufrimientos. Hay dolores que necesitan primero ser acompañados, escuchados y llevados a la oración, como decia el **Papa León XIV** en La Vigilia de Oración, durante su viaje apostólico a España:
+Por eso, cuando alguien está atravesando un momento difícil, la respuesta cristiana no debería ser una frase rápida que pretenda dar sentido al dolor, como: **"Es parte del plan de Dios", "Es porque Dios así lo quiso", "Dios lo hace por algo"** o **"Así es la voluntad de Dios"**, porque en lugar de ayudar, deshumanizamos el dolor y señalamos a Dios como el responsable de nuestros sufrimientos. Hay dolores que necesitan primero ser acompañados, escuchados y llevados a la oración, como decia el **Papa León XIV** en La Vigilia de Oración, durante su viaje apostólico a España:
 
-> "No podemos hacerlo solos en las horas de dolor ..., debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe con discresión, sin la prisa de explicarnos ese dolor".
->
-> "No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas, Dios no quiere el sufrimiento, lo lleva con nosotros".
->
->.
+<div class="cita-destacada cita-destacada--gris">
+    <p>"No podemos hacerlo solos en las horas de dolor... debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe con discresión, sin la prisa de explicarnos ese dolor".</p>
+</div>
+
+<div class="cita-destacada cita-destacada--gris">
+    <p>"No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas, Dios no quiere el sufrimiento, lo lleva con nosotros".</p>
+</div>
 
 <div class="video-embed">
     <iframe
@@ -42,17 +44,17 @@ Entonces, ¿qué podemos decir desde la fe?
 
 ## Dios no es el autor del mal
 
-Lo primero que la Iglesia enseña es muy claro: **Dios no es la causa del mal**.
+Lo primero que la Iglesia nos enseña es muy claro: **Dios no es la causa del mal**.
 
 El Catecismo nos ayuda a comprender que Dios creó el mundo bueno y que cuida de sus criaturas. Sin embargo, vivimos en una creación que todavía está en camino hacia su perfección y en la que también existe la libertad de las criaturas.
 
-## Entonces, ¿De dónde viene el mal?
+## Entonces, ¿de dónde viene el mal?
 
 La Iglesia distingue entre el **Mal Moral** y el **Mal Físico**, porque no todo sufrimiento tiene el mismo origen.
 
-El **Mal Moral** ocurre cuando una persona, haciendo uso de su propia libertad que Dios le ha dado, decide realizar algo que va en contra del bien y causa daño a otros o a sí misma. La violencia, el odio, la mentira, la injusticia, el abuso o el pecado son ejemplos del mal moral.
+El **Mal Moral** ocurre cuando una persona, haciendo uso de su propia libertad que Dios le ha dado, decide realizar algo que va en contra del bien y causa daño a otros o a sí mismo. La violencia, el odio, la mentira, las injusticias, el abuso o el pecado son ejemplos del mal moral.
 
-Dios nos creó libres porque el amor verdadero no puede imponerse. Podemos elegir amar, perdonar y hacer el bien, pero también podemos elegir hacer daño. Dios no quiere el pecado, pero **permite la libertad de sus criaturas**, incluso cuando estas pueden utilizarla para hacer el mal (Catesismo de la Iglesia Católica #311).
+Dios nos creó libres porque **el amor verdadero no puede imponerse.** Podemos elegir amar, perdonar y hacer el bien, pero también podemos elegir hacer daño. Dios no quiere el pecado, pero **permite la libertad de sus criaturas**, incluso cuando estas pueden utilizarla para hacer el mal (Catesismo de la Iglesia Católica #311).
 
 El **Mal Físico**, en cambio, se refiere a aquellas realidades que provocan sufrimiento y que no necesariamente son consecuencia de una decisión humana: **las enfermedades, los accidentes, los desastres naturales, el dolor, la discapacidad o la muerte**, por ejemplo.
 
@@ -60,9 +62,9 @@ Dios quiso crear un mundo "En estado de vía", es decir, una creación que todav
 
 En ambos casos, la Iglesia enseña que **Dios no es de ninguna manera, ni directa ni indirectamente el autor del mal**. Sin embargo, en su providencia, puede acompañarnos en medio del sufrimiento y, misteriosamente, **sacar un bien incluso de aquello que nosotros vivimos como un mal**, como ocurrió de manera suprema en su muerte y resurrección.
 
-Por eso, cuando atravesamos una situación dolorosa, no deberíamos pensar automáticamente: **"Dios quiso que esto me pasara"**. Una cosa es que Dios pueda sacar un bien de una situación dolorosa y otra muy distinta es afirmar que Dios disfruta del sufrimiento o que es él quien provoca el mal.
+Por eso, cuando nos encontramos ante una situación dolorosa, no deberíamos pensar automáticamente: **"Dios quiso que esto me pasara"**. Una cosa es que Dios pueda sacar un bien de una situación dolorosa y otra muy distinta es afirmar que Dios disfruta del sufrimiento o que es él quien provoca el mal.
 
-## Pero Dios no mira nuestro sufrimiento desde lejos
+## Dios no mira nuestro sufrimiento desde lejos
 
 Aquí encontramos algo especialmente hermoso: **Dios no es un espectador distante de nuestro dolor**.
 

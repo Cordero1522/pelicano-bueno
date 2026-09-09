@@ -35,13 +35,13 @@ Esta lista corresponde a las celebraciones de precepto para la Iglesia Universal
 
 ### La Virgen de Guadalupe
 
-En **México**, además de los domingos y de las celebraciones que correspondan según las disposiciones de la Iglesia local, existe una fecha especialmente significativa: El **12 de Diciembre**, solemnidad de **Nuestra Señora de Guadalupe**.
+En **México**, además de los domingos y de las celebraciones que correspondan según las disposiciones del derecho, existe una fecha especialmente significativa: El **12 de Diciembre**, solemnidad de **Nuestra Señora de Guadalupe**.
 
 <div class="img-flotante">
     <img src="/images/notas/formacion/que-es-un-precepto-y-cuando-debemos-ir-a-misa/virgen.webp" alt="Virgen de Guadalupe" />
 </div>
 
-Esta celebración tiene un significado especial no solo para México, sino para todo el continente americano. En **1999**, el Papa **San Juan Pablo II** estableció que la celebración de la **Nuestra Señora de Guadalupe** se realizara cada año en todo el continente americano con el grado de fiesta. Con esta decisión, el Papa quiso poner bajo la protección maternal de la Virgen, a la Iglesia que peregrina en América y pedir su intercesión para que la fe y la nueva evangelización dieran frutos.
+Esta celebración tiene un significado especial no solo para México, sino para todo el continente americano. En **1999**, el Papa **San Juan Pablo II** estableció que la celebración de **Nuestra Señora de Guadalupe** se realizara cada año en todo el continente americano con el grado de fiesta. Con esta decisión, el Papa quiso poner bajo la protección maternal de la Virgen, a la Iglesia que peregrina en América y pedir su intercesión para que la fe y la nueva evangelización dieran frutos.
 
 En México, el **12 de Diciembre tiene además carácter de día de precepto**. No es difícil entender por qué esta celebración ocupa un lugar tan importante en la vida de la Iglesia mexicana, la devoción a Santa María de Guadalupe está profundamente ligada a la historia de la evangelización del país y forma parte de la vida de millones de fieles. Por eso, para los mexicanos, esta fecha no es solamente una de las celebraciones más queridas del año, también es una ocasión para reunirse en torno a la Eucaristía, honrar a la Virgen María y poner nuevamente nuestra vida bajo su intercesión maternal.
 
