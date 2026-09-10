@@ -19,14 +19,6 @@ La propia Iglesia reconoce que estamos ante un misterio. El [**Catecismo de la I
 
 Por eso, cuando alguien está atravesando un momento difícil, la respuesta cristiana no debería ser una frase rápida que pretenda dar sentido al dolor, como: **"Es parte del plan de Dios", "Es porque Dios así lo quiso", "Dios lo hace por algo"** o **"Así es la voluntad de Dios"**, porque en lugar de ayudar, deshumanizamos el dolor y señalamos a Dios como el responsable de nuestros sufrimientos. Hay dolores que necesitan primero ser acompañados, escuchados y llevados a la oración, como decia el **Papa León XIV** en La Vigilia de Oración, durante su viaje apostólico a España:
 
-<div class="cita-destacada cita-destacada--gris">
-    <p>"No podemos hacerlo solos en las horas de dolor... debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe con discresión, sin la prisa de explicarnos ese dolor".</p>
-</div>
-
-<div class="cita-destacada cita-destacada--gris">
-    <p>"No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas, Dios no quiere el sufrimiento, lo lleva con nosotros".</p>
-</div>
-
 <div class="video-embed">
     <iframe
         width="560"
@@ -38,6 +30,14 @@ Por eso, cuando alguien está atravesando un momento difícil, la respuesta cris
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
     </iframe>
+</div>
+
+<div class="cita-destacada cita-destacada--gris">
+    <p>"No podemos hacerlo solos en las horas de dolor... debemos abirnos a alguien que nos ayude a expresar una oración sencilla, que nos acompañe con discresión, sin la prisa de explicarnos ese dolor".</p>
+</div>
+
+<div class="cita-destacada cita-destacada--gris">
+    <p>"No debemos espiritualizar el dolor, reconduciéndolo superficialmente a la voluntad de Dios o a algún misterioso proyecto suyo. Porque esto corre el riesgo de minimizar ese sufrimiento y silenciarlo, de herir a las personas, Dios no quiere el sufrimiento, lo lleva con nosotros".</p>
 </div>
 
 Entonces, ¿qué podemos decir desde la fe?
