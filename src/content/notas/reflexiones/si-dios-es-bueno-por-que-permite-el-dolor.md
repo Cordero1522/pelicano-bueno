@@ -98,7 +98,7 @@ Conoce la tristeza de perder, el dolor de ser traicionado, la angustia de sentir
 
 No.
 
-Aquí aparece una de las partes más importantes: **Dios no abandona a sus hijos ante el mal  **. Incluso **Dios entró en nuestra historia y quiso conocer nuestro dolor desde dentro**.
+Aquí aparece una de las partes más importantes: **Dios no abandona a sus hijos ante el mal**. Incluso **él entró en nuestra historia y quiso conocer nuestro dolor desde dentro**.
 
 Esto no significa que todos nuestros sufrimientos tengan una explicación inmediata. Tampoco significa que debamos resignarnos ante la injusticia o dejar de buscar ayuda cuando sufrimos.
 
