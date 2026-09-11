@@ -58,13 +58,17 @@ Dios nos creó libres porque **el amor verdadero no puede imponerse.** Podemos e
 
 El **Mal Físico**, en cambio, se refiere a aquellas realidades que provocan sufrimiento y que no necesariamente son consecuencia de una decisión humana: **las enfermedades, los accidentes, los desastres naturales, el dolor, la discapacidad o la muerte**, por ejemplo.
 
-Dios quiso crear un mundo "En estado de vía", es decir, una creación que todavía está en camino hacia su plenitud. Esto tampoco significa que cada enfermedad, accidente o tragedia tenga una explicación que podamos conocer. Hay situaciones cuyo sentido simplemente por nuestro conocimiento no alcanzamos a comprender (Catesismo de la Iglesia Católica #310).
+Dios quiso crear un mundo "en estado de vía", es decir, una creación que todavía está en camino hacia su plenitud. Esto tampoco significa que cada enfermedad, accidente o tragedia tenga una explicación que podamos conocer. Hay situaciones cuyo sentido simplemente por nuestro conocimiento no alcanzamos a comprender (Catesismo de la Iglesia Católica #310).
 
 En ambos casos, la Iglesia enseña que **Dios no es de ninguna manera, ni directa ni indirectamente el autor del mal**. Sin embargo, en su providencia, puede acompañarnos en medio del sufrimiento y, misteriosamente, **sacar un bien incluso de aquello que nosotros vivimos como un mal**, como ocurrió de manera suprema en su muerte y resurrección.
 
 Por eso, cuando nos encontramos ante una situación dolorosa, no deberíamos pensar automáticamente: **"Dios quiso que esto me pasara"**. Una cosa es que Dios pueda sacar un bien de una situación dolorosa y otra muy distinta es afirmar que Dios disfruta del sufrimiento o que es él quien provoca el mal.
 
 ## Dios no mira nuestro sufrimiento desde lejos
+
+<div class="img-articulo">
+    <img src="/images/notas/reflexiones/si-dios-es-bueno-por-que-permite-el-dolor/crucificado.webp" alt="Jesús_Crucificado" />
+</div>
 
 Aquí encontramos algo especialmente hermoso: **Dios no es un espectador distante de nuestro dolor**.
 
@@ -78,15 +82,15 @@ También **conoció las burlas, los insultos y la humillación**. Durante su Pas
 
 Jesús **conoció el dolor ante la muerte de alguien querido**. Cuando murió su amigo Lázaro, el Evangelio nos muestra a un Cristo profundamente conmovido. Frente a la tumba, San Juan recoge una frase breve, pero tremendamente humana: **"Jesús lloró"** (Jn 11, 35).
 
-También conoció lo que significa **ser perseguido, tener que huir y abandonar el hogar para proteger la propia vida**. Cuando era apenas un niño, José recibió en sueños la advertencia de que Herodes buscaba al niño para matarlo. Por eso tomó a María y a Jesús y huyó a Egipto (Mt 2, 13-15).
-
-Jesús, desde sus primeros años, experimentó la vulnerabilidad de una familia que tuvo que abandonar su tierra para escapar de la violencia.
+También conoció lo que significa **ser perseguido, tener que huir y abandonar el hogar para proteger la propia vida**. Cuando era apenas un niño, José recibió en sueños la advertencia de que Herodes buscaba al niño para matarlo. Por eso tomó a María y a Jesús y huyó a Egipto (Mt 2, 13-15). Jesús, desde sus primeros años, experimentó la vulnerabilidad de una familia que tuvo que abandonar su tierra para escapar de la violencia.
 
 Y finalmente conoció **la angustia, el abandono y el sufrimiento físico**. En el huerto del Getsemaní experimentó una profunda tristeza antes de su Pasión y, en la cruz, llevó hasta el extremo la entrega de sí mismo.
 
 Por eso, cuando una persona se acerca a Dios desde el dolor, no está hablando con alguien que desconoce lo que significa sufrir.
 
-**Jesús conoce nuestras heridas porque él mismo quiso experimentar verdaderamente el sufrimiento humano.**
+<div class="frase-lateral">
+    "Jesús conoce nuestras heridas porque él mismo quiso experimentar verdaderamente el sufrimiento humano."
+</div>
 
 Conoce la tristeza de perder, el dolor de ser traicionado, la angustia de sentirse solo, la humillación de ser rechazado, el miedo ante la persecución y el dolor de no ser comprendido.
 
@@ -94,7 +98,7 @@ Conoce la tristeza de perder, el dolor de ser traicionado, la angustia de sentir
 
 No.
 
-Aquí aparece una de las partes más importantes: **Dios no abandona al ser humano frente al mal**. Incluso **Dios entró en nuestra historia y quiso conocer nuestro dolor desde dentro**.
+Aquí aparece una de las partes más importantes: **Dios no abandona a sus hijos ante el mal  **. Incluso **Dios entró en nuestra historia y quiso conocer nuestro dolor desde dentro**.
 
 Esto no significa que todos nuestros sufrimientos tengan una explicación inmediata. Tampoco significa que debamos resignarnos ante la injusticia o dejar de buscar ayuda cuando sufrimos.
 
@@ -116,7 +120,7 @@ Pero hay que entender bien esto.
 
 Una traición sigue siendo una traición. Una injusticia sigue siendo una injusticia. Una enfermedad sigue siendo dolorosa. La muerte de una persona querida sigue provocando lágrimas.
 
-Lo que cambia es que **el mal no tiene la última palabra**.
+La diferencia está, en que **el dolor y el mal no tiene la última palabra**.
 
 Dios puede entrar incluso en medio de aquello que nos duele y abrir un camino hacia el bien, aunque nosotros no podamos verlo inmediatamente.
 

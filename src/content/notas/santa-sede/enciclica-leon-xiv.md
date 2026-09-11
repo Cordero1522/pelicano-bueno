@@ -20,6 +20,19 @@ excerpt: "El Papa León XIV firmará el 8 de diciembre su cuarta encíclica, 'Di
 
 El documento, cuyo borrador ha sido revisado en los últimos meses por un equipo de teólogos de diversas nacionalidades, busca ofrecer una reflexión profunda sobre la **dignidad de la persona humana** y la **fraternidad universal** como caminos para superar las crisis actuales: guerras, desigualdad, deterioro ambiental y fractura social.
 
+<div class="video-embed">
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TyCxgc_fbSM?si=sXXRAO54Hfes-1ob&amp;start=528"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+    </iframe>
+</div>
+
 ### Un mensaje para el mundo
 
 Según fuentes cercanas a la Secretaría de Estado, la encíclica se estructura en cinco capítulos que recorren desde el **diagnóstico de la situación contemporánea** hasta las **propuestas concretas para construir una civilización del amor**.
