@@ -26,9 +26,9 @@ Primeramente, agradezco a **Dios**, uno y trino, pues de él procede todo bien, 
 
 Agradezco también a mi padre y señor, **San José**, a quien encomiendo cada día mis manos, mi esfuerzo y mi jornada. A él he confiado también las muchas horas de trabajo, aprendizaje y programación que han hecho posible la construcción de este sitio. 💚🤎
 
-Agradezco a **mamita María de Guadalupe**, a quien confío los deseos de mi corazón y a quien, como buena madre, le pido siempre que acompañe y cuide a las personas que amo. 🌹
+Agradezco a **Santa María de Guadalupe**, a quien como madre confío los deseos de mi corazón y a quien le pido siempre que acompañe y cuide a las personas que amo. 🌹
 
-Por último, pero no menos importante, agradezco a mi familia, quienes me han educado en la fe y han sido parte fundamental de mi formación humana y académica, gracias a la cual he podido desarrollar este proyecto. También agradezco a aquellas personas que siempre llevo en mi corazón y que, junto con mis padres y mi hermana, me animan a seguir adelante, confían en mí y me brindan su amor. ❤️
+Por último, pero no menos importante, agradezco a mi familia, quienes me han educado en la fe y han sido parte fundamental de mi formación humana y académica, gracias a la cual he podido desarrollar este proyecto. También agradezco a aquellas personas que siempre llevo en mi corazón y que, junto con mi familia, me animan a seguir adelante, confían en mí y me brindan su amor. ❤️
 
 ## 🌱 Un proyecto que continúa
 
